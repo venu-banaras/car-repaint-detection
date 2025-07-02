@@ -12,10 +12,14 @@ To identify whether a car part is repainted or not
 We can use effective clustering methods (k-means) to filter out the most dominant colour in a car part that covers most of the car part's area. For example: In a polar white car, the most dominant colour that covers the entire car part is white and its different shades.
 We would create a single cluster for similar colours: this way, we can identify the colour that covers most of the car part
 
+![image](https://github.com/user-attachments/assets/d4fd5440-cb2c-474d-9b0c-3ad87dbba9cf)
+
 ### Looking for variations:
 When we have our dominant colour, we can check for variations in it, 
 For example, if we get the most dominant colour as white that covers most of the car part area, we can check for how many pixels of different white shades are being covered like snow, off white, peach, etc.
 After differentiating between whites(based on pixels covered) the present data is, we can calculate a variance of whites from the original colour code. 
+
+![image](https://github.com/user-attachments/assets/14908420-b39a-4476-acd8-57b7c722423c)
 
 ### Thresholding:
 We can experiment on already present data to calculate for variations in colours in a repainted car part and a non repainted car part to calculate a certain threshold . 
