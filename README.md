@@ -25,6 +25,20 @@ After differentiating between whites(based on pixels covered) the present data i
 We can experiment on already present data to calculate for variations in colours in a repainted car part and a non repainted car part to calculate a certain threshold . 
 Exceeding that threshold would lead to more colour variations, and hence we can conclude that the car part is repainted.
 
+Considering there are 6 shades of similar colours present in the crop
+
+![image](images\image.png)
+
+![image](images\image-1.png)
+
+Total pixels=pixels of dominant colour
+
+![image](images\image-2.png)
+
+![image](images\image-3.png)
+
+The final single variance value will give us an overall measure of how much the colors deviate from pure white, accounting for how common each shade is in the image.
+
 ### Why variation?
 Consider white (255,255,255)
 Small deviations like 255, 255, 254 can be considered a shade of white. Generally, any color where all three channels (R, G, B) are very close to 255 would be perceived as a variation of white. It’s not necessary for the channels to exactly be 255 to be considered white, as slight reductions (in the 250-255 range) will still fall under the category of "white" in most cases.
