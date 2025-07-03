@@ -1,6 +1,4 @@
-# car-repaint-detection
-
-### Problem statement:-
+# Problem statement:-
 To identify whether a car part is repainted or not
 
 ### Approach:-
@@ -17,7 +15,7 @@ We would create a single cluster for similar colours: this way, we can identify 
 ### Looking for variations:
 When we have our dominant colour, we can check for variations in it, 
 For example, if we get the most dominant colour as white that covers most of the car part area, we can check for how many pixels of different white shades are being covered like snow, off white, peach, etc.
-After differentiating between whites(based on pixels covered) the present data is, we can calculate a variance of whites from the original colour code. 
+After differentiating between whites(based on pixels covered) the present data is, we can calculate a variance of whites from the original colour code. The original color code can be extracted from the code provided by the manufacturer itself. So, if the variations are outliers, according to the manufacturer color code, and they are greater than certain threshold percentage of the car part surface, we can say that the part has been repainted.
 
 ![image](https://github.com/user-attachments/assets/14908420-b39a-4476-acd8-57b7c722423c)
 
@@ -49,3 +47,4 @@ Small deviations like 255, 255, 254 can be considered a shade of white. Generall
 3. If the repaint is done with effective colour matching, then it wouldn't be possible to determine if the part is painted on pixel level(possible solution can be to check for dent scratch history of car) 
 4. Fails where the repaint is of totally different colour, for example black colour on white as clustering only groups similar colours
 5. If image quality is varying(which may be possible) then variations would be affected. (If original colours of car are not retained in the image, then results would alter)
+6. Environmental factors will play a huge part in the accuracy of this logic. Hence, this logic will work optimally in a controlled lighting area, like a workshop.
