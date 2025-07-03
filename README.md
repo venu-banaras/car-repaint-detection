@@ -27,15 +27,15 @@ Exceeding that threshold would lead to more colour variations, and hence we can 
 
 Considering there are 6 shades of similar colours present in the crop
 
-![image](images\image.png)
+![image](images/image.png)
 
-![image](images\image-1.png)
+![image](images/image-1.png)
 
 Total pixels=pixels of dominant colour
 
-![image](images\image-2.png)
+![image](images/image-2.png)
 
-![image](images\image-3.png)
+![image](images/image-3.png)
 
 The final single variance value will give us an overall measure of how much the colors deviate from pure white, accounting for how common each shade is in the image.
 
